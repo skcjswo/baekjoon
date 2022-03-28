@@ -1,0 +1,13 @@
+// Baekjoon 1008번
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a,b;
+    cin >> a >> b;
+    cout.precision(10); // 10⁻⁹ 이내여야 하니까 소수점 아래 11자리에서 반올림하여 10자리까지 표현할 수 있도록 cout.precision(10)을 선언
+    cout << a / b;
+    
+    return 0;
+}
