@@ -1,0 +1,25 @@
+//백준 1110
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() 
+{
+ 
+	int num, N;
+	int count = 0;
+	cin >> num;
+ 
+	N = num;
+ 
+	do {
+		// N에 대해 반복하므로 연산된 값도 N으로 덮어쓴다
+		N = (N % 10) * 10 + ((N / 10) + (N % 10)) % 10;
+ 
+		count++; 
+	} while (num != N);
+ 
+	cout << count;	
+	return 0;
+}
